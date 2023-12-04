@@ -1,6 +1,7 @@
-import Menu from "./templates/menu";
+import Menu from "./templates/Menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import store from "./redux/store";
+import store from "./Redux/store";
+import UsuarioForm from "./Cadastros/UsuarioForm";
 import { Provider } from "react-redux";//componente
 
 
@@ -11,9 +12,9 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route path="/usuarios" element={dawda} />
+            <Route path="/usuarios" element={<UsuarioForm/>} />
             <Route path="/" element={<Menu/>} />
-            <Route path="*" element={nada} />
+            <Route path="*"/>
           </Routes>
         </BrowserRouter>
       </Provider>
