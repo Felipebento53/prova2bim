@@ -5,7 +5,7 @@ export default function Menu() {
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand as={Link} to="/">Menu</Navbar.Brand>
-                <Nav.Link as={Link} to=''>Bate-Papo</Nav.Link>
+                <Nav.Link as={Link} to='/chat'>Bate-Papo</Nav.Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

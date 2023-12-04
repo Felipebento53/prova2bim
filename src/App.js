@@ -1,4 +1,5 @@
 import Menu from "./templates/Menu";
+import TelaChat from "./templates/TelaChat";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./Redux/store";
 import UsuarioForm from "./Cadastros/UsuarioForm";
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/usuarios" element={<UsuarioForm/>} />
             <Route path="/" element={<Menu/>} />
+            <Route path="/chat" element={<TelaChat/>}/>
             <Route path="*"/>
           </Routes>
         </BrowserRouter>
