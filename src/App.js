@@ -1,9 +1,9 @@
-import menu from "./templates/menu";
+import Menu from "./templates/Menu"
 
 function App() {
   return (
     <div className="App">
-      <menu/>
+      <Menu/>
     </div>
   );
 }
